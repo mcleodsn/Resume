@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 User Login
+  form(method="POST", action="/users/login")
+    input(type="email", name="username", placeholder="example@example.com")
+    br
+    input(type="password" name="password", placeholder="password")
+    br
+    input(type="submit")
+    br
+
+  p
+    a(href="/login/register") Create a new account

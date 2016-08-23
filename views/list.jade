@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 <center> Welcome Admin
+  br
+  br
+  h2 Resumes
+  each file in files
+    a(href ='/users/download/#{file.id}' ) #{file.originalname}
+    br

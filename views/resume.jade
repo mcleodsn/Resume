@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Submit your resume
+  form(action="/users/uploadResume",
+  method="post",
+  enctype="multipart/form-data")
+
+    input(type="file", name="upl")
+    br
+    input(type="submit")
